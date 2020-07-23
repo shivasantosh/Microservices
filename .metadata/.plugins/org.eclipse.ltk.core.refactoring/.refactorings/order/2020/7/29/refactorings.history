@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.order.exception&apos; to &apos;product/src/main/java&apos;&#x0A;- Original project: &apos;order&apos;&#x0A;- Destination element: &apos;product/src/main/java&apos;&#x0A;- Original element: &apos;order/src/main/java/com.order.exception&apos;" description="Copy package" destination="=product/src\/main\/java" element1="/src\/main\/java&lt;com.order.exception" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1594739800488" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+feign.hystrix.enabled=true
+server.port=10489
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+feign.client.config.default.connect-timeout=1800000000
+feign.client.config.default.readTimeout= 1800000000
+
+order.ribbon.MaxAutoRetries=1
+order.ribbon.MaxAutoRetriesNextServer=1
+
+product.ribbon.MaxAutoRetries=1
+product.ribbon.MaxAutoRetriesNextServer=1

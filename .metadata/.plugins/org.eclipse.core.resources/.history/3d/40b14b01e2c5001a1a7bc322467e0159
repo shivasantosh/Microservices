@@ -1,0 +1,5 @@
+package com.order.feign.service;
+
+public class ProductFeignServiceFallBack {
+
+}

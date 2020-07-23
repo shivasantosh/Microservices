@@ -1,0 +1,15 @@
+package com.order.feign.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.order.exception.ProductNotFoundException;
+
+public class ProductFeignServiceFallBack implements ProductFeignService{
+
+	@Override
+	public ResponseEntity<String> validateProduct(long productId) {
+		//code for updating operations in my DB
+		throw new ProductNotFoundException("PRODUCT_NOT_FOUND", "PRODUCT_NOT_FOUND");
+	}
+
+}

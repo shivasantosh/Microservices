@@ -1,0 +1,11 @@
+package com.order.feign.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@FeignClient
+public class ProductFeignService {
+
+	ResponseEntity<String> validateProduct(@PathVariable("productId") long productId);
+}

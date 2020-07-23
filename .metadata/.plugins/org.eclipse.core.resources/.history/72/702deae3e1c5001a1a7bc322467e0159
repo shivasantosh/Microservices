@@ -1,0 +1,12 @@
+package com.order.exception;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+
+public class ProductNotFoundException extends RuntimeException{
+	
+	private String errorMessage;
+	private String errorCode;
+
+}

@@ -1,0 +1,13 @@
+server:
+ port: 8761
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registryFetchIntervalSeconds: 1
+    
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1

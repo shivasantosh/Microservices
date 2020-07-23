@@ -1,0 +1,23 @@
+feign.hystrix.enabled=true
+server.port=10489
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+feign.client.config.default.connect-timeout=1800000000
+feign.client.config.default.readTimeout= 1800000000
+
+#spring.application.name= order
+#spring.jmx.default-domain= order
+#eureka.client.register-with-eureka= true
+#eureka.client.fetch-registry= true
+#spring.cloud.refresh.enabled=false
+#
+#eureka.client.eureka-server-read-timeout-seconds= 900000
+#eureka.client.eureka-server-connect-timeout-seconds= 900000
+#eureka.client.service-url.defaultZone= http://localhost:8761/eureka/
+#eureka.instance.hostname= localhost
+#eureka.client.use-dns-for-fetching-service-urls=false
+#
+#ribbon.ConnectTimeout: 60000
+#ribbon.ReadTimeout: 60000
+#ribbon.MaxAutoRetries: 1
+#ribbon.MaxAutoRetriesNextServer: 1

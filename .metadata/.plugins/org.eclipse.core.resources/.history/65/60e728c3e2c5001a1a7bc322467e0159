@@ -1,0 +1,20 @@
+package com.order.feign.service;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.http.ResponseEntity;
+
+import com.order.exception.ProductNotFoundException;
+
+public class ProductFeignServiceFallBack implements ProductFeignService{
+
+	private static final Logger LOGGER = LogManager.getLogger(ProductFeignServiceFallBack.class);
+	
+	@Override
+	public ResponseEntity<String> validateProduct(long productId) {
+		//code for updating operations in my DB
+		//throw exception to the client
+		throw new ProductNotFoundException("PRODUCT_NOT_FOUND", "PRODUCT_NOT_FOUND");
+	}
+
+}

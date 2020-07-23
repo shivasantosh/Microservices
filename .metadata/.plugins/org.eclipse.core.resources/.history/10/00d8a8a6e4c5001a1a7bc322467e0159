@@ -1,0 +1,17 @@
+package com.product.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProdcutController {
+
+	@PostMapping("/validate/product/{productId}")
+	public ResponseEntity<String> validateProduct(@PathVariable long productId){
+		//mycode to be check from DB or call third party service But Let's consider error case
+		return new ResponseEntity<>("not found", HttpStatus.EXPECTATION_FAILED);
+	}
+}
